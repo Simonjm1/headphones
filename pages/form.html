@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Register</title>
@@ -13,64 +14,72 @@
     <header>
         <div class="topnav">
             <nav>
-                <ul>
-                    <li class="top-navitem"><a href="#"></a>Home</li>
-                    <li class="top-navitem"><a href="#"></a>Buy</li>
-                    <li class="top-navitem"><a href="#"></a>Sign In</li>
-                    
+                <ul class="topnav-lists">
+                    <li class=left ><a href="#" class="top-navitem">Home</a></li>
+                    <li class="center "><a href="#" class="top-navitem">Buy</a></li>
                 </ul>
             </nav>
+            <button class="button" id="login">Log In</button>
         </div>
     </header>
     <div class="form-box">
         <div class="header-text">
             <nav>
                 <ul>
-                    <li class="button"><a href="form-signup.html" ></a>Register</a></li>
-                    <li class="button"><a href="form-signin.html" ></a>Sign In</a></li>
+                    <li class="hdr-btn button btn-register"><a href="form-signup.html"></a>Register</li>
+                    <li class="hdr-btn button btn-sign"><a href="form-signin.html"></a>Sign In</li>
                 </ul>
             </nav>
         </div>
+        <div class=""></div>
         <form action="/action_page.php">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Enter full Name" required>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Enter Email Adress" required>
-            <label for="number">Phone</label>
+            <label for="tel">Phone</label>
             <input type="tel" id="tel" name="tel" placeholder="Enter Mobile Number" required>
             <label for="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Enter Password" required>
-            <label for="password-repeat"><b> Password</b></label>
-            <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+            <label for="password"><b> Password</b></label>
+            <input type="password" placeholder="Confirm Password" name="password" required>
             <p>By creating an account you agree to our  <a href="#" id="terms-link">Terms & Privacy</a></p>  
             <button class="button" id="submit"><b>Submit</b></button> 
         </form>
     </div>
     <footer>
-        <div class="flex-footer-container"></div>
+        <div class="flex-footer-container">
+
             <div class="footer-container">
                 <h4>About PowerUp</h4>
-                <ul>
+                <nav>
+                    <ul>
                     <li> <a href="#" class="navitem"> Our mission</a></li>
                     <li><a href="#" class="navitem"> PowerUp cares</a></li>
                 </ul>
+                </nav>
+
             </div>
-            <div class="footer-container shipping"></div>
+            <div class="footer-container shipping">
                 <h4>Shipping &#38; return</h4>
+                <nav>
                 <ul>
                     <li><a href="#" class="navitem">Shipping</a></li>
                     <li><a href="#" class="navitem">Shipping costs</a></li>
                     <li><a href="#" class="navitem">Return &#38; refund</a></li>
                 </ul>
+                </nav>
             </div>
-            <div class="footer-container info"></div>
+            <div class="footer-container info">
                 <h4>Useful information</h4>
+                <nav>
                 <ul>
                     <li><a href="#" class="navitem">Payment options</a></li>
                     <li><a href="#" class="navitem"> Privacy policy</a></li>
                     <li><a href="#" class="navitem">General terms &#38; conditions</a> </li>
                 </ul>
-
+                </nav>
+            </div>
             <div class="footer-container contact">
                 <h4>Contact us</h4>
                 <p>072 8882 4567 <br>
@@ -80,21 +89,23 @@
             </div>
             <div class="footer-container subscribe">
                 <p>Sign up for newsletters and receive 50kr voucher!
-                    <span><input type="email">
-                    <label for="Enter your email"required></label>
+                    <span><input type="email" placeholder="Enter your email" required>
+                    <label for="email"></label>
                     </span></p>
-                    <button>Subscribe</button>
+                    <button class="button">Subscribe</button>
             </div>
-            <div class="footer-container followUs"></div>
+            <div class="footer-container followUs">
                 <h4>Follow us</h4>
-                <ul>
-                    <li class="icon facebook"><a href="#" class="fa fa-facebook"></a></li>
-                    <li class="icon twitter"><a href="#" class="fa fa-twitter"></a></li>
-                    <li class="icon instagram"><a href="#" class="fa fa-instagram"></a></li>
-                    <li class="icon youtube"><a href="#" class="fa fa-youtube"></a></li>
-                </ul>
+                <nav>
+                     <ul>
+                        <li class="icon facebook"><a href="#" class="fa fa-facebook"></a></li>
+                        <li class="icon twitter"><a href="#" class="fa fa-twitter"></a></li>
+                        <li class="icon instagram"><a href="#" class="fa fa-instagram"></a></li>
+                        <li class="icon youtube"><a href="#" class="fa fa-youtube"></a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+        </div>    
     </footer>
 </body>
 </html>

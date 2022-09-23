@@ -13,45 +13,84 @@
   }
 body html {
     height: 100%;
+    width: 1000px;
 }
 body {
+    max-width: 90vw;
+    min-height: calc(100vh - 2rem);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color:  #bd7482;
     font-family:'Nunito';
     color: white;
+    font-size: 15px;
+    margin: 0 30px;
+   /* margin-bottom: 0;*/
 }
 
 header {
-    width: 100%;
+   /* width: 100%;*/
+    display: flex; 
     padding: 20px;
-    background-color: rgb(26, 76, 106);
+    background-color:rgb(91, 87, 90);
     color: white;
-    font-size: 20px;
-    display: flex;  
-   
+    font-size: 20px;     
+}
+.topnav-lists {
+    justify-content: space-around;
+}
+ul li {
+    list-style-type: none;
+}
+.topnav {
+    display: flex;
+  
 }
 
-.top-navitem a {
+.topnav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-navitem  {
     color: white;
     padding: 14px 20px;
-    text-decoration: none;
     text-align: center;
     
+    
+ }
+ .top-navitem:hover {
+    font-weight: 700;
+    font-size: 25px;
+   
+ }
+ #login {
+    border: 2px;
+    border-radius: 5px;
+    margin-right: 0;
+ }
+ #login:hover {
+    background-color: bisque;
+    color: black;
  }
  
 .form-box {
     margin-top: 250px;
-    margin-left: 250px;
-    background-color: rgb(26, 76, 106);
-	padding: 40px;
+    margin-bottom: 350px;
+    background-color:rgb(91, 87, 90);
+	padding: 25px;
 	border-radius: 5px;
 	box-shadow: 0 0 10px black;
-	top: 0;
+    width: 500px;
+	height: 650px; 
+	/*top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	width: 500px;
-	height: 700px; 
-    opacity: 0.7;
+	
+    opacity: 0.7;*/
 }
 .header-text {
     font-size: 24px;
@@ -66,14 +105,10 @@ header {
 	width: 100%;
 	font-size: 18px;
 }
-.form-box label {
 
-}
-ul {
+.hdr-btn {
     display: flex;
     justify-content:space-evenly ;
-}
-ul li {
     display: inline;   
 }
 a:link {
@@ -88,19 +123,17 @@ a:link {
 .button {
    
     text-decoration: none;
-    background-color: yellow;
     border-radius: 15px;
-    border: 2px white;
     margin: 10px;
     padding: 10px;
     cursor: pointer;
-    text-transform: uppercase;
-    color: black;
+    
 
 }
 
 .button:hover  {
-    background-color:rgb(0, 255, 255) ;
+    background-color:grey;
+    color: black;
     
 }
 
@@ -109,31 +142,64 @@ p {
     
 }
 #submit {
-    margin-left: 200px;
+    background-color: grey;
+    margin-left: 150px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
 
+}
+#submit:hover {
+    background-color: bisque;
+    color: black;
 }
 .navitem {
     text-decoration: none;
 }
 footer {
     
-    left:20px ;
-    bottom: 0;
+    font-size: 12px;
+    /*margin-bottom: 0;*/
     height: 500px;
     width: 100%;
     color: white;
     text-align: center;
 }
-.footer-container {
-    background-color: rgb(26, 76, 106);
+.flex-footer-container {
+  
+    background-color:rgb(91, 87, 90);
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    padding: 20px;
+    align-content: space-between;
+}
 
-
+.followUs ul {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
 }
 .navitem {
     color: white;
     text-decoration: underline;
 }
-@media screen and (max-width: 700px) {
+
+.fa {
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px;
+  }
+.icon:hover {
+    background-color: bisque;
+}
+/*@media screen and (max-width: 700px) {
     .row, .navbar {   
       flex-direction: column;
     }
