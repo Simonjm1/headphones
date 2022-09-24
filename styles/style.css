@@ -10,6 +10,7 @@
 } 
 * {
     box-sizing: border-box;
+    color: white;
   }
 body html {
     height: 100%;
@@ -44,7 +45,7 @@ header {
     justify-self: flex-end;
 }
 
-.topnav ul {
+.topnav {
     display: flex;
     flex-direction: row;
 }
@@ -59,6 +60,8 @@ header {
  .top-navitem:hover {
     font-weight: 700;
     font-size: 25px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
    
  }
  .div-button {
@@ -125,8 +128,6 @@ a:link {
     margin: 10px;
     padding: 10px;
     cursor: pointer;
-    
-
 }
 
 .button:hover  {
@@ -135,7 +136,7 @@ a:link {
     
 }
 
-p {
+.input-box p {
     margin: 10px;
     
 }
@@ -151,62 +152,100 @@ p {
     background-color: bisque;
     color: black;
 }
-.navitem {
+.div a {
     text-decoration: none;
 }
 ul li {
     list-style-type: none;
-footer {
-    
+}
+
+footer {   
     font-size: 12px;
-    /*margin-bottom: 0;*/
-    height: 500px;
-    width: 100%;
-    color: white;
-    text-align: center;
+    margin-bottom: 0;
+   
 
 }
-.footer-container {
-    margin: 10px;
-   
-}
-.flex-footer-container {
-  
-   
-    margin-bottom: 0;
+.flex-footer-container { 
     display: flex;
     flex-wrap: wrap;
     height: 300px;
-    padding: 20px;
-    align-content: space-between;
+    justify-content:space-between;  
+}
+.footer-container {
+    flex-direction: column;
+    margin: 20px;
+}
+.footer-container .navitem {
+    flex-direction: column;
+    
+}
+h3 {
+    text-align: center;
+    font-size: 15px;
 }
 
-.followUs ul {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-}
 .navitem {
     color: white;
-    text-decoration: underline;
+    align-self: center;
+    font-size: 13px;
 }
-
+.navitem:hover{
+    text-decoration: underline;
+    color:#cd486b;
+}
+.subscribe-btn {
+    background-color: #bd7482;
+    color: black;
+}
+.subscribe-btn:hover {
+    background-color: #ffc0c0;
+    color: black;
+}
 .fa {
     color: white;
-    padding: 15px;
     font-size: 20px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     text-align: center;
-    text-decoration: none;
+    cursor: pointer;
+    background: #ffc0c0;
+    padding:20px;
     border-radius: 50%;
-    margin: 5px;
-   
-  } cursor: pointer;
-.fa:hover {
-   color: bisque;
-   font-size: 30px;
-
 }
+.fa-facebook {
+   color:#4267B2 ;
+}
+.fa-facebook:hover {
+    color:#4267B2 ;
+    
+}
+.fa-twitter {
+  color: #00acee;
+}
+.fa-twitter:hover {
+    color: #00acee;
+    
+  }
+.fa-instagram {
+    color: #cd486b;
+}
+.fa-instagram:hover {
+    color: #cd486b;
+   
+}
+.fa-youtube {
+    color: #FF0000;
+}
+.fa-youtube:hover {
+    color: #FF0000;
+   
+}
+.fa:hover {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 30px;
+}
+
 /*@media screen and (max-width: 700px) {
     .row, .navbar {   
       flex-direction: column;
