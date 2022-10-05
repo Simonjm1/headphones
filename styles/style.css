@@ -10,18 +10,8 @@
 } 
 * {
     box-sizing: border-box;
-    color: white;
   }
-body html {
-<<<<<<< Updated upstream
-    height: 100%;
-    width: 1000px;
-    -webkit-font-smoothing:antialiased;
-=======
-    height: 100vh;
-    width: 90vw;
->>>>>>> Stashed changes
-}
+
 body {
     max-width: 90vw;
     min-height: calc(100vh - 2rem);
@@ -29,111 +19,66 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-<<<<<<< Updated upstream
-    background-color:rgb(91, 87, 90);
-=======
-    background-color:  #e1ddde;
->>>>>>> Stashed changes
+    background-color:#e1ddde;
     font-family:'Nunito';
     color: black;
     font-size: 15px;
     margin: 0 30px;
    /* margin-bottom: 0;*/
 }
-
-<<<<<<< Updated upstream
-header {
-   /* width: 100%;*/
-   
-    padding: 20px;
-    display: flex; 
-    justify-content:space-between;
-    color: white;
-    font-size: 20px;     
-}
 .div-button {
     justify-self: flex-end;
 }
 
 .topnav {
-=======
-
+    margin-top: 20px;
+    height: 25vh;
+    width: 90vw;
+    
+}
 .topnav-lists {
-    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.a {
+    float: left;
+    
+}
+.b {
+    float: right;
+   
 }
 ul li {
     list-style-type: none;
 }
-.topnav {
-    margin-top: 20px;
-    height: 25vh;
-    width: 90vw; 
-}
-
-.topnav-lists {
->>>>>>> Stashed changes
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between; 
-}
 
 .top-navitem  {
-    color: black;
-    font-size: 20px;
-    font-weight: 500;
+    
     padding: 14px 20px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    
-    
-    
+    font-size: 20px;
+    font-weight: 600;
+    color: black; 
  }
  .top-navitem:hover {
     font-weight: 700;
-    font-size: 25px;
-    transition: all 0.3s ease-in-out;
+    color:  #bd7482;
     cursor: pointer;
    
  }
- .div-button {
-    justify-content: flex-end;
- }
- #login {
-    border: 2px;
-    border-radius: 5px;
-   
- }
- #login:hover {
-    background-color: bisque;
-    color: black;
- }
- 
+
 .form-box {
-<<<<<<< Updated upstream
-    margin-top: 250px;
-    margin-bottom: 350px;
+   margin: 0 auto;
+   color: white;
     background-color:  #bd7482;
-=======
-    margin: 0 auto;
-    color: white;
-    background-color:#bd7482;
->>>>>>> Stashed changes
 	padding: 25px;
 	border-radius: 5px;
-	box-shadow: 0 0 10px black;
-    border: #732434;
+	box-shadow: 0 0 10px #732434;
     width: 500px;
 	height: 650px; 
     display: flex;
     flex-direction: column;
-  
-	/*top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	
-    opacity: 0.7;*/
 }
 .header-text {
     justify-content: center;
@@ -155,12 +100,14 @@ ul li {
     display: flex;
     justify-content:space-evenly ;
     display: inline;   
-   align-items: center;
 }
 a:link {
     text-decoration: none;
+    
 }
-
+a {
+    color: black;
+}
 #terms-link {
     color: white;
     text-decoration: underline;
@@ -186,7 +133,7 @@ a:link {
     
 }
 #submit {
-    
+    background-color: grey;
     margin-left: 150px;
     color: white;
     text-transform: uppercase;
@@ -197,130 +144,75 @@ a:link {
     background-color: bisque;
     color: black;
 }
-<<<<<<< Updated upstream
-.div a {
-    text-decoration: none;
-}
+
 ul li {
     list-style-type: none;
 }
 
 footer {   
-    font-size: 12px;
-    margin-bottom: 0;
-   
-
-}
-.flex-footer-container { 
-=======
-
-footer {   
-    font-size: 12px;
+    font-size: 16px;
     margin: auto;
-   
-}
-footer a:link {
-    color:black;
 }
 .flex-footer-container { 
-    margin: 100px  0 auto;
->>>>>>> Stashed changes
+    margin: 100px 0 auto;
     display: flex;
     flex-wrap: wrap;
     height: 300px;
     justify-content:space-between;  
-<<<<<<< Updated upstream
+ 
 }
 .footer-container {
     flex-direction: column;
     margin: 20px;
-}
-.footer-container .navitem {
-    flex-direction: column;
-    
-}
-h3 {
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 10px;
+    justify-content:space-evenly; 
 }
 
-.navitem {
-    color: white;
-=======
-}
-.footer-container {
-    flex-direction: column;
-    margin: 20px;
-}
-.footer-container .navitem {
-    flex-direction: column;
-    justify-content: center;
-    
-}
-h4 {
-    font-size: 15px;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.navitem {
-    text-decoration: none;
-    color: black;
->>>>>>> Stashed changes
-    align-self: center;
-    font-size: 13px;
-}
-.navitem:hover{
-    text-decoration: underline;
-<<<<<<< Updated upstream
-    color:#cd486b;
-=======
-    color:#bd7482;
-    
->>>>>>> Stashed changes
-}
-.subscribe-btn {
-    background-color: #bd7482;
-    color: black;
-}
-.subscribe-btn:hover {
-    background-color: #ffc0c0;
-    color: black;
-<<<<<<< Updated upstream
-=======
-}
 .followUs {
     display: flex;
-   flex-direction: column;
-   justify-content: center;
+    flex-direction: column;
+    align-items:  center;
+  
 }
 .followUs ul {
     display: flex;
     flex-direction: row;
     text-align: center;
->>>>>>> Stashed changes
 }
+
+.footer-container .navitem {
+    flex-direction: column;
+    
+}
+h3 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.navitem {
+    align-self: center;
+    font-size: 13px;
+}
+.navitem:hover{
+    text-decoration: underline;
+    color:#cd486b;
+}
+footer .navitem:hover {
+    color:#cd486b;
+}
+
 .fa {
-    color: white;
     font-size: 20px;
     height: 20px;
     width: 20px;
-<<<<<<< Updated upstream
     text-align: center;
-=======
->>>>>>> Stashed changes
     cursor: pointer;
     background: #ffc0c0;
     padding:20px;
     border-radius: 50%;
-<<<<<<< Updated upstream
-=======
     display: flex;
     justify-content: center;
-    align-items: center;
-
->>>>>>> Stashed changes
+    align-items:  center;
 }
 .fa-facebook {
    color:#4267B2 ;
@@ -338,7 +230,6 @@ h4 {
   }
 .fa-instagram {
     color: #cd486b;
-<<<<<<< Updated upstream
 }
 .fa-instagram:hover {
     color: #cd486b;
@@ -347,16 +238,6 @@ h4 {
 .fa-youtube {
     color: #FF0000;
 }
-=======
-}
-.fa-instagram:hover {
-    color: #cd486b;
-   
-}
-.fa-youtube {
-    color: #FF0000;
-}
->>>>>>> Stashed changes
 .fa-youtube:hover {
     color: #FF0000;
    
@@ -367,7 +248,10 @@ h4 {
     font-size: 30px;
 }
 
-/*@media screen and (max-width: 700px) {
-    .row, .navbar {   
-      flex-direction: column;
+@media screen and (max-width: 600px) {
+    .flex-footer-container{
+      float: none;
+      display: block;
+      width: 100%;
     }
+  }
